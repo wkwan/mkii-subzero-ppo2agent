@@ -2,7 +2,7 @@
 
 ## Video:
 
-The final Sub-Zero model I demo'ed in the video: https://drive.google.com/file/d/1_jyXBvkc7t1KzemiBqWyAsFkDGeqzsSd/view?usp=sharing
+The final Sub-Zero model I demo'ed in the video: https://drive.google.com/file/d/1_jyXBvkc7t1KzemiBqWyAsFkDGeqzsSd/view?usp=sharing  
 The second-last model I demo'ed in the video, it's the same one but before I trained it specifically on the Baraka fight: https://drive.google.com/file/d/1DZtZyaWInQlageeaBpAjupA9nj6S3kyA/view?usp=sharing
 
 ## Setup:
