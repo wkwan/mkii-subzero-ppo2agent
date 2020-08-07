@@ -10,7 +10,7 @@ from utils import *
 gamename = "MortalKombatII-Genesis"
 
 if __name__ == "__main__":
-    n_cpu = 8
+    n_cpu = 16
 
     env = SubprocVecEnv([make_env] * n_cpu)
     env = VecFrameStack(env, n_stack=4)

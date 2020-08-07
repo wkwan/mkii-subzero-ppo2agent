@@ -2,6 +2,8 @@
 
 ## Video:
 
+The final Sub-Zero model I trained in the video: https://drive.google.com/file/d/1_jyXBvkc7t1KzemiBqWyAsFkDGeqzsSd/view?usp=sharing
+
 ## Setup:
 1. Install pip packages and any dependencies.
 2. Find a Mortal Kombat II Sega Genesis ROM and install it with ```python3 -m retro.import /path/to/your/ROMs/directory/```

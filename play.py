@@ -7,11 +7,11 @@ from stable_baselines.common.callbacks import CheckpointCallback
 from utils import *
 
 if __name__ == "__main__":
-    num_envs = 8 # Must use the save number of envs as trained on but we create a single dummy env for testing.
+    num_envs = 16 # Must use the save number of envs as trained on but we create a single dummy env for testing.
     envs = SubprocVecEnv([make_env] * num_envs)    
     envs = VecFrameStack(envs, n_stack=4)
 
-    model = PPO2.load("./training_checkpoints/your_model.zip")
+    model = PPO2.load("./subzero_model.zip")
     model.set_env(envs)
     obs = envs.reset()
     print(obs.shape)

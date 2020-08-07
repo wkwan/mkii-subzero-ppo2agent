@@ -47,7 +47,6 @@ class SubzeroDiscretizer(Discretizer):
     # Ground Freeze: D, B, LK
     # Slide: B + LK + HK 
     def __init__(self, env):
-        print(env.unwrapped.buttons)
         super().__init__(env=env, buttons=env.unwrapped.buttons, combos=[[], ['X'], ['A'], ['Z'], ['C'], ['Y'], ['START'], ['UP'], ['DOWN'], ['LEFT'], ['RIGHT'], 
         ['LEFT', 'UP'], ['LEFT', 'DOWN'], ['RIGHT', 'UP'], ['RIGHT', 'DOWN'],
         ['UP', 'Z'], ['LEFT', 'UP', 'Z'], ['RIGHT', 'UP', 'Z'],
@@ -63,12 +62,13 @@ class SubzeroDiscretizer(Discretizer):
 
 gamename = "MortalKombatII-Genesis"
 
+# start from the 1st fight on very easy playing as Sub-Zero
 def make_env():
-    env = retro.make(gamename, state='subzerovsbarakaveryeasy.state', obs_type=retro.Observations.IMAGE)
+    env = retro.make(gamename, state='firstfightveryeasy.state', obs_type=retro.Observations.IMAGE)
     env = SubzeroDiscretizer(env)
     return env
 
 def make_env_record():
-    env = retro.make(gamename, state='subzerovsbarakaveryeasy.state', obs_type=retro.Observations.IMAGE)
+    env = retro.make(gamename, state='firstfightveryeasy.state', obs_type=retro.Observations.IMAGE)
     env = SubzeroDiscretizer(env)
     return env
